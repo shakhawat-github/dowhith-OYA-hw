@@ -1,0 +1,390 @@
+/* common css start */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+body {
+  position: relative;
+}
+/* common css end */
+
+/* nav start */
+#nav {
+  padding: 23px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  z-index: 10;
+}
+#nav .nav-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav .nav-box .navlist ul {
+  display: flex;
+  gap: 80px;
+}
+#nav .nav-box .navlist ul li a {
+  color: #606d93;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#nav .nav-box .navlist ul li a:hover {
+  font-weight: 700;
+}
+#nav .nav-box .signin a {
+  padding: 16px 40px;
+  border-radius: 8px;
+  background: #6345d5;
+  display: inline-flex;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  border: 1px solid #6345d5;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  overflow: hidden;
+}
+#nav .nav-box .signin a::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  z-index: -1;
+}
+#nav .nav-box .signin a:hover::after {
+  width: 100%;
+}
+#nav .nav-box .signin a:hover {
+  color: #6345d5;
+}
+/* nav end */
+
+/* banner start */
+#banner {
+  padding: 220px 0 660px;
+  position: relative;
+}
+#banner .bannershapone {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#banner .bnr-box {
+  display: flex;
+}
+#banner .bnr-box .txt {
+  width: 50%;
+}
+#banner .bnr-box .txt h1 {
+  color: #192252;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 110%;
+}
+#banner .bnr-box .txt p {
+  color: #848fac;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  margin-top: 40px;
+  max-width: 332px;
+}
+#banner .bnr-box .txt .bnr-btn {
+  margin-top: 40px;
+  display: flex;
+  column-gap: 24px;
+}
+#banner .bnr-box .txt .bnr-btn a {
+  color: #192252;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  padding: 20px 40px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: 1px solid #192252;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+#banner .bnr-box .txt .bnr-btn a::after {
+  content: "";
+  width: 100%;
+  height: 0%;
+  background-color: #6345d5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  z-index: -1;
+}
+#banner .bnr-box .txt .bnr-btn a:hover::after {
+  height: 100%;
+}
+#banner .bnr-box .txt .bnr-btn a:hover {
+  color: #fff;
+}
+#banner .bnr-box .bnr-card {
+  width: 50%;
+  position: relative;
+}
+#banner .bnr-box .bnr-card .card {
+  margin-left: 270px;
+  position: relative;
+}
+#banner .bnr-box .bnr-card .card .name {
+  position: absolute;
+  top: 15%;
+  left: 8%;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+#banner .bnr-box .bnr-card .card .nmbr {
+  position: absolute;
+  top: 13%;
+  left: 0%;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+#banner .bnr-box .bnr-card .amount-transfer {
+  position: absolute;
+  top: 0;
+  left: -25px;
+  z-index: 1;
+}
+#banner .bnr-box .bnr-card .transfer {
+  display: flex;
+  column-gap: 12px;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: #fff;
+  width: fit-content;
+  position: sticky;
+}
+#banner .bnr-box .bnr-card .transfer li {
+  color: #192252;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+#banner .bnr-box .bnr-card .transfer li:first-child {
+  color: #219653;
+}
+#banner .bnr-box .bnr-card .amount {
+  margin-top: 25px;
+  padding: 16px 24px;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: fit-content;
+  position: sticky;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin-left: 50px;
+}
+#banner .bnr-box .bnr-card .amount .total {
+  color: #848fac;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+}
+#banner .bnr-box .bnr-card .amount .money-flag {
+  display: flex;
+  align-items: center;
+  column-gap: 44px;
+  margin-top: 12px;
+}
+#banner .bnr-box .bnr-card .amount .money-flag h3 {
+  color: #a9b4cd;
+  font-size: 28px;
+  font-weight: 700;
+}
+#banner .bnr-box .bnr-card .amount .money-flag h3 span {
+  color: #192252;
+  border-right: 2px solid #192252;
+  padding-right: 5px;
+}
+#banner .bnr-box .bnr-card .amount .money-flag img {
+  width: 43px;
+  height: 25px;
+}
+#banner .bnr-box .bnr-card .income-upgrade {
+  position: absolute;
+  top: 9px;
+  right: -22px;
+}
+#banner .bnr-box .bnr-card .income-upgrade .chart{
+  margin-left: 28px;
+}
+#banner .bnr-box .bnr-card .income-upgrade .income {
+  margin-top: 20px;
+  margin-left: 53px;
+  padding: 16px 24px;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: fit-content;
+  position: sticky;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+#banner .bnr-box .bnr-card .income-upgrade .income .ttl-income {
+  color: var(--Primary-Neutral-500, #848fac);
+  font-family: Urbanist;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#banner .bnr-box .bnr-card .income-upgrade .income h3 {
+  color: #192252;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 8px;
+}
+#banner .bnr-box .bnr-card .income-upgrade .income p {
+  color: #27ae60;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.24px;
+  padding: 4px 12px;
+  background-color: rgba(39, 174, 95, 0.2);
+  width: fit-content;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-top: 8px;
+}
+#banner .bnr-box .bnr-card .income-upgrade .upgrade {
+  padding: 15px 40px;
+  background-color: #fff;
+  text-transform: capitalize;
+  color: #fc9770;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 150%;
+  border: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  overflow: hidden;
+  margin-top: 28px;
+  border: 1px solid #ffffff;
+}
+#banner .bnr-box .bnr-card .income-upgrade .upgrade::after{
+  content: '';
+  width: 100%;
+  height: 0%;
+  background-color: #fc9770;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+#banner .bnr-box .bnr-card .income-upgrade .upgrade:hover::after{
+  height: 100%;
+}
+#banner .bnr-box .bnr-card .income-upgrade .upgrade:hover{
+  color: #fff;
+}
+#banner .bnrshaptwo{
+  position: absolute;
+  top: 20%;
+  left: 0;
+}
+
+/* banner end */
