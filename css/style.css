@@ -616,7 +616,30 @@ body {
   font-weight: 600;
   line-height: normal;
 }
-#play .play-box .txt ul li i{
+#play .play-box .txt ul li i {
   color: #219653;
 }
 /* play end */
+/* support start */
+#support {
+  padding: 40px 0 62px;
+}
+#support .title h2 {
+  color: #848fac;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+  text-align: center;
+}
+#support .support-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+#support .support-box a {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 150%;
+}
+/* support end */
