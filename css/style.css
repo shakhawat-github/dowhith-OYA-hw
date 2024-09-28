@@ -827,33 +827,249 @@ body {
   -o-border-radius: 28px;
 }
 #plan .plan-box .right .button a {
-  color: #848FAC;
+  color: #848fac;
   padding: 12px 16px;
   font-size: 16px;
   font-weight: 600;
   border-radius: 22px;
   text-transform: capitalize;
-  transition: .4s;
-  -webkit-transition: .4s;
-  -moz-transition: .4s;
-  -ms-transition: .4s;
-  -o-transition: .4s;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
 }
 #plan .plan-box .right .button a:hover {
   background: #fc9770;
   color: #ffffff;
 }
-#plan .plan-box .right .feature{
+#plan .plan-box .right .feature {
   margin-top: 53px;
   display: flex;
   flex-direction: column;
   row-gap: 54px;
 }
-#plan .plan-box .right .feature li{
+#plan .plan-box .right .feature li {
   display: flex;
   justify-content: space-between;
 }
-#plan .plan-box .right .feature li i{
-  color: #6245D5;
+#plan .plan-box .right .feature li i {
+  color: #6245d5;
 }
 /* plan end */
+/* contact start */
+#contact {
+  background: #201353;
+  padding: 100px 0;
+}
+#contact .contbox {
+  display: flex;
+  justify-content: space-between;
+}
+#contact .contbox .txt h2 {
+  max-width: 448px;
+}
+#contact .contbox .txt .paragraph {
+  margin-top: 24px;
+  max-width: 434px;
+}
+#contact .contbox .txt img {
+  margin: 64px 0 48px;
+  width: 46px;
+}
+#contact .contbox .txt .paratwo {
+  font-size: 20px;
+  color: #ffffff;
+  max-width: 489px;
+}
+#contact .contbox .txt .name {
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+  margin-top: 46px;
+  display: inline-block;
+}
+#contact .contbox .txt .profile-box {
+  margin-top: 48px;
+  display: flex;
+  column-gap: 24px;
+}
+#contact .contbox .txt .profile-box .profile {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #d9d9d9;
+}
+#contact .contbox .txt .profile-box .profile:nth-child(2) {
+  opacity: 0.75;
+}
+#contact .contbox .txt .profile-box .profile:nth-child(3) {
+  opacity: 0.5;
+}
+#contact .contbox .txt .profile-box .profile:nth-child(4) {
+  opacity: 0.25;
+}
+#contact .contbox .txt .profile-box .slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.64);
+}
+#contact .contbox .txt .profile-box .slider i {
+  font-size: 20px;
+  color: #ffffff;
+}
+#contact .contbox .message .msgbox {
+  padding: 64px 80px;
+  background-color: #3b2f68;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+#contact .contbox .message .msgbox img {
+  margin: 0 auto;
+}
+#contact .contbox .message .msgbox h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+#contact .contbox .message .msgbox form {
+  width: 440px;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+#contact .contbox .message .msgbox form label {
+  display: flex;
+  flex-direction: column;
+}
+#contact .contbox .message .msgbox form label span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%;
+  padding-bottom: 16px;
+}
+#contact .contbox .message .msgbox form label input,
+#contact .contbox .message .msgbox form label textarea {
+  padding: 14px 10px 14px 24px;
+  color: #848fac;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  border-radius: 8px;
+  background: #fff;
+}
+#contact .contbox .message .msgbox form label input::placeholder,
+#contact .contbox .message .msgbox form label textarea::placeholder {
+  color: #848fac;
+  font-size: 16px;
+}
+#contact .contbox .message .msgbox form button {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  padding: 20px 40px;
+  border-radius: 8px;
+  background: #fc9770;
+  margin-top: 16px;
+}
+#contact .contbox .message .msgbox form p {
+  text-align: right;
+}
+#contact .contbox .message .msgbox form p span {
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-right: 10px;
+}
+#contact .contbox .message .msgbox form p a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+}
+/* contact end */
+/* footer start */
+#footer {
+  padding: 100px 0 0;
+  background: #201353;
+}
+#footer .footbox {
+  display: flex;
+  justify-content: space-between;
+}
+#footer .logo .paragraph {
+  max-width: 332px;
+  margin-top: 24px;
+}
+#footer .footlist h3 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+}
+#footer .footlist ul {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+#footer .footlist ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+#footer .copyright {
+  border-top: 1px solid #808080;
+  padding: 24px 32px;
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+#footer .copyright p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  opacity: .5;
+}
+#footer .copyright ul{
+  display: flex;
+  column-gap: 24px;
+}
+#footer .copyright ul li a{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+/* footer end */
